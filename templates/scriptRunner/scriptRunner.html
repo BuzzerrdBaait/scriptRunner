@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script Runner</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'scriptRunner/scriptRunner.css'%}">
+
+    <script src="{% static 'scriptRunner/scriptRunner.js'%}"></script>
+    <script>
+    const scriptRunnerURL = "{% url 'scriptRunner:scriptRunner' %}";
+    const csrfToken = '{{ csrf_token }}';
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <input type="text" id="functionName" placeholder="Name your function">
+
+        
+    <label for="argSelector">Choose # of args</label>
+
+    <select name="argSelector" id="numArgs">
+        <option value=1>1</option>
+        <option value=2>2</option>
+        <option value=3>3</option>
+        <option value=4>4</option>
+    </select>
+
+    
+
+    <div class="row">
+
+        <button onclick="pythonSignals('newFunction')">Script 2</button>
+
+        <div class="outputTab">
+
+        <p2 id='newFunction' text="output"></p2>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- New function _-->
+
+<!--deleteFunction_-->
+<div class="container">
+    <input type="text" id="deleteFunction_arg1" placeholder="">
+
+    <button onclick="pythonSignals('deleteFunction')">deleteFunction</button>
+
+    <div class="outputTab">
+        <p2 id="deleteFunction_output" text="deleteFunction output"></p2>
+    </div>
+</div>
+<!--deleteFunction_-->
+
+
+{{functions}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
