@@ -33,3 +33,26 @@ And in my app I get this:
 
 ![image](https://github.com/user-attachments/assets/fc9ada9e-de3e-466a-bf0e-c35701550608)
 
+
+Getting started:
+
+cloning or downloading the zip file, unzip the file and open cmd line.
+
+cd into the folder containing manage.py
+use:
+>>> py manage.py runserver
+to launch the server
+![image](https://github.com/user-attachments/assets/7169d0a3-0b4d-4215-888c-b5007852819b)
+hold control+click http://127.0.0.1:8000/
+
+this takes you to the main page.
+
+![image](https://github.com/user-attachments/assets/2b7e8f1d-3cc8-48a6-994a-ad2eeacc82ce)
+
+follow the link and that will take you to the app. 
+
+Want to contribute?
+I plan to add documentation to the main page. If anyone wants to help with that I would be grateful.
+Also, I would be open to someone making this look better. I like building things and designing is not my forte.
+Any interest give me motivation!
+
