@@ -1,58 +1,62 @@
-Welcome to ScriptRunner
+# ScriptRunner
 
-This is an experimental library that allows the easy integration of python widgets into your web app. 
+ScriptRunner is an experimental library that allows easy integration of Python widgets into your web app.
 
-Here are a couple screen shots:
+## Overview
 
-Here is the scriptRunner application main page.
+Welcome to ScriptRunner! This tool enables you to create and manage Python functions through a web interface. Here are a couple of screenshots demonstrating its features:
 
-![image](https://github.com/user-attachments/assets/92aa6c75-0f54-41a3-954a-23823eb5bb16)
+### Main Page
+![Main Page](https://github.com/user-attachments/assets/92aa6c75-0f54-41a3-954a-23823eb5bb16)
 
-I choose to create a function called anyFunction with 3 arguments.
+### Creating a Function (anyFunction with 3 arguments)
+![Creating anyFunction](https://github.com/user-attachments/assets/05152d89-cbad-4e19-b343-1b702a83afbf)
 
-![image](https://github.com/user-attachments/assets/05152d89-cbad-4e19-b343-1b702a83afbf)
+### Creating Another Widget (multiplyNumbers)
+![Creating multiplyNumbers](https://github.com/user-attachments/assets/6264867c-51af-4df5-b9df-783dcb122a5d)
 
-I refresh my page manually for now because I intend to implement the LLM here in the future. 
+### Testing Widgets
+If you receive a "yay" response, everything is working fine. Otherwise, you'll get an HTML error message. If you encounter issues, try the following steps:
+1. Restart your server.
+2. Close and reopen the files (scriptRunner.html, scriptRunner.js, views.py, functions.py).
+3. Clear your browser cache if necessary.
 
-I guess Ill make another widget called multiplyNumbers while I am at it.
+Typically, these steps resolve any issues, and you won't need to repeat them.
 
-![image](https://github.com/user-attachments/assets/6264867c-51af-4df5-b9df-783dcb122a5d)
+### Example of Editing a Function Template
+Transform this:
+![Original Function Template](https://github.com/user-attachments/assets/1c669971-9a94-4ad4-9f4c-3a08fb53db58)
+Into this:
+![Edited Function Template](https://github.com/user-attachments/assets/718a00d7-daa5-42f5-bb0e-428e8fef3089)
 
-I test the widgets, if yay comes back you are good. Otherwise you will get a huge html string returned.
+### Result in the App
+![App Result](https://github.com/user-attachments/assets/fc9ada9e-de3e-466a-bf0e-c35701550608)
 
-If in trouble at this point, here is how you can fix it:
-I have found that restarting my server helps, and closing the files (scriptRunner.html, scriptRunner.js,views.py,functions.py). Also, depending on your browser setttings, you may have to clear the browser cache. It is a weird bug because after I do the previously mentioned steps, I don't have to do them again, and I can keep making more widgets without problems. I would love input here if anyone has some ideas.
+## Getting Started
 
-So now all I have to do is open functions.py and edit the function's template however I like.
-I turn this:
-![image](https://github.com/user-attachments/assets/1c669971-9a94-4ad4-9f4c-3a08fb53db58)
-To this:
-![image](https://github.com/user-attachments/assets/718a00d7-daa5-42f5-bb0e-428e8fef3089)
+To get started with ScriptRunner, follow these steps:
+1. Clone or download the zip file and unzip it.
+2. Open a command line interface and navigate to the folder containing `manage.py`.
+3. Run the server with:
+    ```
+    py manage.py runserver
+    ```
+4. Hold `Control` and click [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
+5. Follow the link to access the app.
 
-And in my app I get this:
+### Server Launch Example
+![Launching the Server](https://github.com/user-attachments/assets/7169d0a3-0b4d-4215-888c-b5007852819b)
 
-![image](https://github.com/user-attachments/assets/fc9ada9e-de3e-466a-bf0e-c35701550608)
+### Main Page Example
+![Main Page Example](https://github.com/user-attachments/assets/2b7e8f1d-3cc8-48a6-994a-ad2eeacc82ce)
 
+## Contribution
 
-Getting started:
+### Documentation
+I plan to add more documentation to the main page. If you’re interested in helping, your contributions would be greatly appreciated.
 
-cloning or downloading the zip file, unzip the file and open cmd line.
+### Design and UI Improvements
+I'm also looking for someone to help improve the visual design of ScriptRunner. If you have a knack for design, your skills would be very welcome.
 
-cd into the folder containing manage.py
-use:
->>> py manage.py runserver
-to launch the server
-![image](https://github.com/user-attachments/assets/7169d0a3-0b4d-4215-888c-b5007852819b)
-hold control+click http://127.0.0.1:8000/
-
-this takes you to the main page.
-
-![image](https://github.com/user-attachments/assets/2b7e8f1d-3cc8-48a6-994a-ad2eeacc82ce)
-
-follow the link and that will take you to the app. 
-
-Want to contribute?
-I plan to add documentation to the main page. If anyone wants to help with that I would be grateful.
-Also, I would be open to someone making this look better. I like building things and designing is not my forte.
-Any interest give me motivation!
-
+### Motivation
+Your interest and contributions give me the motivation to keep improving ScriptRunner!
