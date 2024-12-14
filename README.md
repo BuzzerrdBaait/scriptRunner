@@ -16,10 +16,9 @@ Welcome to ScriptRunner! This tool enables you to create and manage Python funct
 ![Creating multiplyNumbers](https://github.com/user-attachments/assets/6264867c-51af-4df5-b9df-783dcb122a5d)
 
 ### Testing Widgets
-If you receive a "yay" response, everything is working fine. Otherwise, you'll get an HTML error message. If you encounter issues, try the following steps:
-1. Restart your server.
-2. Close and reopen the files (scriptRunner.html, scriptRunner.js, views.py, functions.py).
-3. Clear your browser cache if necessary.
+At this point, you will most likely be returned with a weird and several page long html as a string. I am pinning this down, but I noticed that when i clear browser cache and restart my server it works great. I do not have to restart every time though. It is a very tricky bug, but the template is still good. Something is happeneing preventing files from updating in the browser.
+
+1. Clear your browser cache. I am pretty sure my browser is caching the old javaScript file. When I clear browser file and history
 
 Typically, these steps resolve any issues, and you won't need to repeat them.
 
